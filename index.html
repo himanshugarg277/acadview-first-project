@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+   <head>
+      <title>Softronic Pvt. Ltd.</title>
+	  
+	  <!--jquery included-->
+      <script src="js/jquery-3.1.1.js"></script>
+	  
+	  <!--Lobster font included-->
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	  
+   <style>
+      small:hover, h1:hover{
+         background-color:blue;
+         font-size:30px;
+         }
+   
+      body {
+	     background: url("images/back.jpg");
+         font-family: helvetica, sans-serif;
+         margin: 0 auto;
+         max-width: 500px;
+		 background:cover;
+         background-repeat:no-repeat;
+      }
+	  
+	  h1 {
+         font-family: 'lobster', cursive;
+         text-align: center;
+         font-size: 40px;
+         color: #FF7043;
+      }
+	  
+      h2 {
+         text-align: center;
+         color:black;
+      }
+	  
+	  ul{ 
+         text-align:right;
+         font-size:30px;
+          }
+
+      li{
+         display:inline;
+         padding-left=15px;
+         padding-right:15px;
+          }
+		  
+	  input[type="submit"]{
+         background:red;
+         color:white;
+           }	  
+	
+      div {
+	     background-size:contain;
+         background-repeat:no-repeat;
+         height:250px;
+         width:900px;
+         position: relative;
+         margin: 40px 0 0 0;
+         border-radius: 10px;
+      }
+	  
+      
+	  
+      p {
+         color: rgba(255,255,255,.5);
+         background: black;
+         background: linear-gradient(bottom, rgba(0,0,0,.8), rgba(0,0,0,.3));   
+         padding: 10px;
+         line-height: 30px;
+         text-align: justify;
+         position: absolute;
+         bottom: 0;
+         margin: 0;
+         height: 30px;
+         transition: height 2s;
+         }
+
+      small {
+         opacity: 0;
+      }
+
+      .show-description p {
+         height: 100px;
+      }
+
+      .show-description small {
+         opacity: 1;
+      }
+
+      .atom{
+         background-image: url("images/atom.jpg");
+      }
+	  
+      .github{
+         background-image: url("images/github.jpg");
+      }
+	  
+      .zoom{
+         background-image: url("images/zoom logo.png");
+      }
+	  
+      .price {
+         float: right;
+      }
+
+   </style>
+
+   </head>
+
+   <body>
+      <h1>Softronic  Private  Limited</h1>
+      <h2>The World Of Software</h2>
+	  
+	  <ul>
+         <li><a htref="#">Home</a></li>
+	     <li><a htref="#">About Us</a></li>
+	     <li><a htref="#">Contacts</a></li>
+	     <li><input type="serach" placeholder="search software"><input type="submit" value="search"></li>
+         </ul>
+	  
+      <div class="atom">
+      <p>ATOM <span class="price">$10</span><br/>
+      <small>At Github,we're building the text editor,we've always wanted:hacable to the core,<br/>but approachable on the first day without ever touching a single config file.</small></p>
+      </div>
+
+      <div class="github">
+      <p>Github <span class="price">$15</span><br/>
+      <small>Online project hosting using Git. Includes sorce-code browser,in-line editing,wikis<br/> and ticketing,free for public open-source-code.</small></p>
+      </div>
+  
+      <div class="zoom">
+      <p>Zoom <span class="price">$8</span><br/>
+      <small>Zoom unifies cloud video conferncing,simple online meetings and cross audio and<br/> screen sharing experience across Zoom Rooms,Windows,Mac,Ios.</small></p>
+      </div>
+
+   <script>
+      $('div').on('click', function() {   
+      $(this).toggleClass('show-description');
+      }); <!--show-description of item on click.-->
+   </script>
+
+   </body>
+</html>
+<!--html ends-->
